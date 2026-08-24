@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>החוקה של יאמין | עץ קישורים, חוקי הדיסקורד ואנשים חשובים</title>
+  
+  <!-- Meta tags for sharing -->
+  <meta name="description" content="העמוד הרשמי של יאמין - קישורים לרשתות, שידורים חיים ב-Kick, חוקת הרפובליקה והנהגת השרת.">
+  <meta name="theme-color" content="#d4af37">
+
+  <!-- Google Fonts: Assistant & Heebo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Heebo:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Small Red Status Alert (התראה קטנה באדום בצד) -->
+  <div class="floating-status-alert">
+    <span class="alert-pulse-dot"></span>
+    <span>האתר עוד לא מוכן עד הסוף ומתעדכן ⚠️</span>
+  </div>
+
+  <!-- Ambient Golden Background Lights -->
+  <div class="bg-ambient">
+    <div class="orb-1"></div>
+    <div class="orb-2"></div>
+  </div>
+
+  <div class="container">
+    
+    <!-- Profile & Brand Header -->
+    <header class="profile-header">
+      <div class="avatar-wrapper">
+        <div class="avatar-glow"></div>
+        <img src="assets/logo.png" alt="הלוגו של יאמין" class="avatar-img">
+        <div class="crown-badge">👑</div>
+      </div>
+      
+      <h1 class="profile-title">החוקה של יאמין</h1>
+      <p class="profile-subtitle">רפובליקת יאמין • הקהילה הרשמית, ערוץ השידורים וחוקי השרת</p>
+      
+      <!-- Badges -->
+      <div class="status-badges">
+        <span class="badge badge-kick">
+          <span class="live-dot"></span>
+          שידורים חיים ב-Kick
+        </span>
+        <span class="badge badge-discord">
+          <i class="fa-brands fa-discord"></i>
+          שרת פעיל בדיסקורד
+        </span>
+        <span class="badge badge-gold">
+          <i class="fa-solid fa-scale-balanced"></i>
+          חוקה רשמית
+        </span>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs (4 Tabs) -->
+    <nav class="tabs-nav">
+      <button class="tab-btn active" data-target="tab-links">
+        <i class="fa-solid fa-link"></i>
+        <span>קישורים</span>
+      </button>
+      <button class="tab-btn" data-target="tab-vip">
+        <i class="fa-solid fa-crown"></i>
+        <span>אנשים חשובים</span>
+      </button>
+      <button class="tab-btn" data-target="tab-rules">
+        <i class="fa-solid fa-scroll"></i>
+        <span>חוקי הרפובליקה</span>
+      </button>
+      <button class="tab-btn" data-target="tab-forbidden">
+        <i class="fa-solid fa-ban"></i>
+        <span>איסור הפצה</span>
+      </button>
+    </nav>
+
+    <!-- TAB 1: LINKS & LINKTREE -->
+    <main id="tab-links" class="tab-panel active">
+      
+      <div class="links-grid">
+        
+        <!-- Discord Server (Featured) -->
+        <a href="https://discord.gg/4zMQ7YxR6C" target="_blank" rel="noopener noreferrer" class="link-card featured-discord">
+          <div class="link-info">
+            <div class="link-icon-box" style="color: #8ea1ff; background: rgba(88, 101, 242, 0.15);">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+            <div>
+              <div class="link-title">
+                <span>שרת הדיסקורד הרשמי</span>
+                <span class="badge badge-discord" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">הצטרפו עכשיו</span>
+              </div>
+              <div class="link-desc">הקהילה של יאמין, דיבורים, גיימינג ואירועים בלעדיים</div>
+            </div>
+          </div>
+          <div class="link-action">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </a>
+
+        <!-- Kick Live Stream (Featured) -->
+        <a href="https://kick.com/yaminau" target="_blank" rel="noopener noreferrer" class="link-card featured-kick">
+          <div class="link-info">
+            <div class="link-icon-box" style="color: #53fc18; background: rgba(83, 252, 24, 0.15);">
+              <i class="fa-solid fa-tower-broadcast"></i>
+            </div>
+            <div>
+              <div class="link-title">
+                <span>yaminau ב-Kick</span>
+                <span class="badge badge-kick" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">Watch Live</span>
+              </div>
+              <div class="link-desc">ערוץ הסטרימינג הרשמי של יאמין - צפו בשידורים חיים</div>
+            </div>
+          </div>
+          <div class="link-action">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="quick-actions">
+        <button class="action-btn" id="copy-discord-btn">
+          <i class="fa-solid fa-copy"></i>
+          <span>העתק קישור לדיסקורד</span>
+        </button>
+        <button class="action-btn" id="share-site-btn">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span>שתף את האתר</span>
+        </button>
+      </div>
+
+    </main>
+
+    <!-- TAB 2: IMPORTANT PEOPLE (אנשים חשובים) -->
+    <main id="tab-vip" class="tab-panel">
+      
+      <div class="section-banner">
+        <div class="banner-icon">👑</div>
+        <div class="banner-text">
+          <h3>הנהגת הרפובליקה של יאמין</h3>
+          <p>האישים המובילים, מנהיגי הקהילה, אנשי המפתח ושומרי החוקה של הרפובליקה. לחצו על כפתור הדיסקורד לגישה ישירה לפרופיל שלהם!</p>
+        </div>
+      </div>
+
+      <div class="vip-list">
+
+        <!-- Rank 1: מר סטרימר יאמין -->
+        <div class="vip-card vip-leader">
+          <div class="vip-header">
+            <div class="vip-avatar-wrap">
+              <div class="vip-avatar-glow"></div>
+              <img src="assets/logo.png" alt="מר סטרימר יאמין" class="vip-avatar">
+              <div class="vip-rank-pill">#1 מנהיג</div>
+            </div>
+            <div class="vip-identity">
+              <div class="vip-title-line">
+                <span class="vip-name">מר סטרימר יאמין</span>
+                <span class="vip-role-tag">👑 מייסד ומנהיג הרפובליקה</span>
+              </div>
+              <p class="vip-desc">
+                השליט הבלתי מעורער, יוצר התוכן והסטרימר הראשי של הקהילה. מקור החוקה וראש הרפובליקה של יאמין.
+              </p>
+            </div>
+          </div>
+          <div class="vip-footer-bar">
+            <div class="vip-traits">
+              <span class="trait-badge"><i class="fa-solid fa-tower-broadcast" style="color: #53fc18;"></i> סטרימר ראשי ב-Kick</span>
+              <span class="trait-badge"><i class="fa-solid fa-gavel" style="color: var(--gold-primary);"></i> מחוקק החוקה</span>
+              <span class="trait-badge"><i class="fa-solid fa-crown" style="color: var(--gold-light);"></i> המנהל העליון</span>
+            </div>
+            <a href="https://discord.com/users/805060605211574312" target="_blank" rel="noopener noreferrer" class="vip-discord-btn">
+              <i class="fa-brands fa-discord"></i>
+              <span>פרופיל דיסקורד</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rank 2: סגן ימינו FLEXBS -->
+        <div class="vip-card vip-deputy">
+          <div class="vip-header">
+            <div class="vip-avatar-wrap">
+              <div class="vip-avatar-glow"></div>
+              <img src="assets/flexbs.png" alt="סגן ימינו FLEXBS" class="vip-avatar">
+              <div class="vip-rank-pill">#2 סגן ימין</div>
+            </div>
+            <div class="vip-identity">
+              <div class="vip-title-line">
+                <span class="vip-name">סגן ימינו FLEXBS</span>
+                <span class="vip-role-tag">⚔️ סגן המנהיג וזרוע הברזל</span>
+              </div>
+              <p class="vip-desc">
+                סגן ימינו הנאמן של יאמין, משליט הסדר והביטחון ברפובליקה, אוכף חוקת השרת ושומר על שלום הקהילה.
+              </p>
+            </div>
+          </div>
+          <div class="vip-footer-bar">
+            <div class="vip-traits">
+              <span class="trait-badge"><i class="fa-solid fa-shield-halved" style="color: #94a3b8;"></i> מגן הרפובליקה</span>
+              <span class="trait-badge"><i class="fa-solid fa-hand-fist" style="color: #cbd5e1;"></i> אוכף החוקה הראשי</span>
+              <span class="trait-badge"><i class="fa-solid fa-user-ninja" style="color: #e2e8f0;"></i> סגן ימין ראשון</span>
+            </div>
+            <a href="https://discord.com/users/964830148337762334" target="_blank" rel="noopener noreferrer" class="vip-discord-btn">
+              <i class="fa-brands fa-discord"></i>
+              <span>פרופיל דיסקורד</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rank 3: גגי מן -->
+        <div class="vip-card vip-gagiman">
+          <div class="vip-header">
+            <div class="vip-avatar-wrap">
+              <div class="vip-avatar-glow"></div>
+              <img src="assets/gagiman.png" alt="גגי מן" class="vip-avatar">
+              <div class="vip-rank-pill">#3 מוד בכיר</div>
+            </div>
+            <div class="vip-identity">
+              <div class="vip-title-line">
+                <span class="vip-name">גגי מן</span>
+                <span class="vip-role-tag">🔵 מוד בכיר בקיק • NOTATACO</span>
+              </div>
+              <p class="vip-desc">
+                מוד בכיר בקיק, אישיות מרכזית וידוע גם בתור החיקוי הרשמי של גיא אסלנוב ו-NOTATACO ברפובליקה של יאמין.
+              </p>
+            </div>
+          </div>
+          <div class="vip-footer-bar">
+            <div class="vip-traits">
+              <span class="trait-badge"><i class="fa-solid fa-star" style="color: #00b4d8;"></i> מוד בכיר ב-Kick</span>
+              <span class="trait-badge"><i class="fa-solid fa-masks-theater" style="color: #90e0ef;"></i> החיקוי של גיא אסלנוב</span>
+              <span class="trait-badge"><i class="fa-solid fa-tag" style="color: #53fc18;"></i> NOTATACO</span>
+            </div>
+            <a href="https://discord.com/users/943056032085733416" target="_blank" rel="noopener noreferrer" class="vip-discord-btn">
+              <i class="fa-brands fa-discord"></i>
+              <span>פרופיל דיסקורד</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rank 4: עידו - מוד חשוב בקיק -->
+        <div class="vip-card vip-kickmod">
+          <div class="vip-header">
+            <div class="vip-avatar-wrap">
+              <div class="vip-avatar-glow"></div>
+              <img src="assets/ido.png" alt="עידו - מוד חשוב בקיק" class="vip-avatar">
+              <div class="vip-rank-pill">#4 מוד קיק</div>
+            </div>
+            <div class="vip-identity">
+              <div class="vip-title-line">
+                <span class="vip-name">עידו</span>
+                <span class="vip-role-tag">🟢 מוד חשוב בקיק</span>
+              </div>
+              <p class="vip-desc">
+                המוד החשוב והמסור של יאמין ב-Kick, מפקח על הצ'אט בשידורים החיים, שומר על הסדר ומנהל את הקהילה בזמן אמת.
+              </p>
+            </div>
+          </div>
+          <div class="vip-footer-bar">
+            <div class="vip-traits">
+              <span class="trait-badge"><i class="fa-solid fa-bolt" style="color: #53fc18;"></i> מוד רשמי ב-Kick</span>
+              <span class="trait-badge"><i class="fa-solid fa-broom" style="color: #8aff66;"></i> שומר הצ'אט בשידורים</span>
+              <span class="trait-badge"><i class="fa-solid fa-user-check" style="color: #a7f3d0;"></i> צוות VIP בכיר</span>
+            </div>
+            <a href="https://discord.com/users/1496130702390071377" target="_blank" rel="noopener noreferrer" class="vip-discord-btn">
+              <i class="fa-brands fa-discord"></i>
+              <span>פרופיל דיסקורד</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rank 5: נאוריוס -->
+        <div class="vip-card vip-naorius">
+          <div class="vip-header">
+            <div class="vip-avatar-wrap">
+              <div class="vip-avatar-glow"></div>
+              <img src="assets/naorius.png" alt="נאוריוס" class="vip-avatar">
+              <div class="vip-rank-pill">#5 אישיות</div>
+            </div>
+            <div class="vip-identity">
+              <div class="vip-title-line">
+                <span class="vip-name">נאוריוס</span>
+                <span class="vip-role-tag">✡️ משיח שקר • יהודי טוב</span>
+              </div>
+              <p class="vip-desc">
+                יהודי טוב, משיח שקר ובן אדם פשוט מן המניין ברפובליקה של יאמין.
+              </p>
+            </div>
+          </div>
+          <div class="vip-footer-bar">
+            <div class="vip-traits">
+              <span class="trait-badge"><i class="fa-solid fa-star-of-david" style="color: #38bdf8;"></i> יהודי טוב</span>
+              <span class="trait-badge"><i class="fa-solid fa-wand-magic-sparkles" style="color: #c084fc;"></i> משיח שקר</span>
+              <span class="trait-badge"><i class="fa-solid fa-user" style="color: #94a3b8;"></i> בן אדם פשוט</span>
+            </div>
+            <a href="https://discord.com/users/901416899101999115" target="_blank" rel="noopener noreferrer" class="vip-discord-btn">
+              <i class="fa-brands fa-discord"></i>
+              <span>פרופיל דיסקורד</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rank 6: סובייט -->
+        <div class="vip-card vip-soviet">
+          <div class="vip-header">
+            <div class="vip-avatar-wrap">
+              <div class="vip-avatar-glow"></div>
+              <img src="assets/soviet.png" alt="סובייט" class="vip-avatar">
+              <div class="vip-rank-pill">#6 לוחם אבוד</div>
+            </div>
+            <div class="vip-identity">
+              <div class="vip-title-line">
+                <span class="vip-name">סובייט</span>
+                <span class="vip-role-tag">🌹 אדם אבוד בעולם המודרני</span>
+              </div>
+              <p class="vip-desc">
+                אדם אבוד בעולם המודרני והאכזרי, מנסה לעשות שינוי אמיתי ולהשפיע ברפובליקה של יאמין.
+              </p>
+            </div>
+          </div>
+          <div class="vip-footer-bar">
+            <div class="vip-traits">
+              <span class="trait-badge"><i class="fa-solid fa-heart-crack" style="color: #f43f5e;"></i> Born to Feel</span>
+              <span class="trait-badge"><i class="fa-solid fa-earth-americas" style="color: #fda4af;"></i> מחפש שינוי</span>
+              <span class="trait-badge"><i class="fa-solid fa-person-walking" style="color: #94a3b8;"></i> אדם אבוד</span>
+            </div>
+            <a href="https://discord.com/users/833987357623582770" target="_blank" rel="noopener noreferrer" class="vip-discord-btn">
+              <i class="fa-brands fa-discord"></i>
+              <span>פרופיל דיסקורד</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- TAB 3: CONSTITUTION & SERVER RULES -->
+    <main id="tab-rules" class="tab-panel">
+      
+      <div class="section-banner">
+        <div class="banner-icon">📜</div>
+        <div class="banner-text">
+          <h3>חוקי הרפובליקה של יאמין</h3>
+          <p>הקפדה על החוקים הינה חובה לכל חברי הקהילה. שמרו על כבוד וסדר כדי שלכולנו תהיה חוויה מהנה!</p>
+        </div>
+      </div>
+
+      <!-- Search Input -->
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="rules-search" class="search-input" placeholder="חיפוש מהיר בחוקים (למשל: ספאם, קללות, צוות...)">
+      </div>
+
+      <!-- Rules List -->
+      <div class="rules-list" id="rules-container">
+
+        <!-- Rule 1 -->
+        <div class="rule-card">
+          <div class="rule-number">1</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>🚫 לא להספים בצ'אטים</span>
+            </div>
+            <div class="rule-desc">
+              אם שלחת את אותה הודעה 17 פעמים, היא לא תהפוך למצחיקה יותר. הימנעו מהצפת הצ'אט בהודעות חוזרות, אימוג'ים מוגזמים או תיוגים מיותרים.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 2 -->
+        <div class="rule-card">
+          <div class="rule-number">2</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>🔞 אין לשלוח תוכן מיני או לא מתאים</span>
+            </div>
+            <div class="rule-desc">
+              חל איסור מוחלט על שליחת תכנים מיניים, NSFW, רמיזות מיניות בוטות או כל תוכן שאינו הולם את אופי הקהילה.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 3 -->
+        <div class="rule-card">
+          <div class="rule-number">3</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>🧠 להשתמש בשכל לפני ששולחים הודעה</span>
+            </div>
+            <div class="rule-desc">
+              הפעילו שיקול דעת. תחשבו רגע לפני שאתם לוחצים Enter - האם זה פוגע? האם זה מיותר? כבוד הדדי מעל הכל.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 4 -->
+        <div class="rule-card">
+          <div class="rule-number">4</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>🤬 בלי קללות מוגזמות / הטרדות</span>
+            </div>
+            <div class="rule-desc">
+              שיח אלים, קללות חריגות, קללות ממוקדות, הטרדות אישיות, בריונות או ירידה לפסים אישיים לא יתקבלו ויגררו ענישה.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 5 -->
+        <div class="rule-card">
+          <div class="rule-number">5</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>🕵️ בלי פרסום מידע אישי</span>
+            </div>
+            <div class="rule-desc">
+              מספרי טלפון, כתובות מגורים, סיסמאות וכדומה (ראו הרחבה מלאה בטאב איסור הפצה). Doxxing אסור בהחלט!
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 6 -->
+        <div class="rule-card">
+          <div class="rule-number">6</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>📸 אין לפרסם דברים מגעילים / מטרידים</span>
+            </div>
+            <div class="rule-desc">
+              תמונות או סרטונים דוחים, פחד, זוועה (Gore), חומרים מזעזעים או כל תוכן שמטרתו להגעיל ולהטריד.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 7 -->
+        <div class="rule-card">
+          <div class="rule-number">7</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>⚖️ החלטת צוות = החלטת צוות</span>
+            </div>
+            <div class="rule-desc">
+              החלטת הצוות הינה סופית. אפשר לערער בצורה מכבדת ובפרטי בלבד.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 8 -->
+        <div class="rule-card">
+          <div class="rule-number">8</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>🧹 שמרו על הצ'אט נקי</span>
+            </div>
+            <div class="rule-desc">
+              שמרו על סדר בערוצים, שוחחו בכל חדר בנושא המיועד לו והימנעו מבלאגן מיותר.
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 9 -->
+        <div class="rule-card">
+          <div class="rule-number">9</div>
+          <div class="rule-content">
+            <div class="rule-title">
+              <span>🚨 אל תנסו לבדוק כמה אפשר לעבור על החוקים</span>
+            </div>
+            <div class="rule-desc">
+              אל תחפשו פרצות או 'גבולות אפורים'. ניסיון להתחכם עם החוקים יוביל להרחקה מיידית.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Accept Rules Box -->
+      <div class="acceptance-box">
+        <label class="accept-label">
+          <input type="checkbox" id="accept-rules-check" class="accept-checkbox">
+          <span>קראתי, הבנתי ואני מקבל על עצמי את חוקת הרפובליקה</span>
+        </label>
+        <div id="accepted-msg" class="accepted-msg">
+          ✨ מעולה! החוקה אושרה בהצלחה. ברוך הבא לרפובליקה של יאמין!
+        </div>
+      </div>
+
+    </main>
+
+    <!-- TAB 4: FORBIDDEN TO DISTRIBUTE (איסור הפצה מורחב) -->
+    <main id="tab-forbidden" class="tab-panel">
+      
+      <div class="section-banner danger-banner">
+        <div class="banner-icon">🚫</div>
+        <div class="banner-text">
+          <h3>חדר איסור הפצה מורחב — חוקי הרפובליקה של יאמין</h3>
+          <p>רשימה מקיפה של כל הדברים שהפצתם בשרת, בפרטי או לחברי הקהילה אסורה בהחלט. הפרה תוביל להרחקה מיידית ובאן לצמיתות!</p>
+        </div>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="forbidden-search" class="search-input" placeholder="חיפוש ברשימת האיסורים (למשל: תעודת זהות, IP, טוקן, אשראי, צילום מסך...)">
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="filter-chips">
+        <button class="chip-btn active" data-filter="all">הכל</button>
+        <button class="chip-btn" data-filter="cat-contact">📱 זהות ומידע אישי</button>
+        <button class="chip-btn" data-filter="cat-security">🔐 אבטחה, סיסמאות וטוקנים</button>
+        <button class="chip-btn" data-filter="cat-finance">💳 פיננסי ואשראי</button>
+        <button class="chip-btn" data-filter="cat-location">📍 מיקומים וכתובות</button>
+        <button class="chip-btn" data-filter="cat-media">💬 שיחות, הקלטות וצילומים</button>
+        <button class="chip-btn" data-filter="cat-sensitive">🔞 תכנים רגישים ואינטימיים</button>
+        <button class="chip-btn" data-filter="cat-health">🩺 מידע רפואי</button>
+        <button class="chip-btn" data-filter="cat-family">👨‍👩‍👧 קטינים ומשפחה</button>
+        <button class="chip-btn" data-filter="cat-documents">📄 מסמכים, תגים וחוזים</button>
+        <button class="chip-btn" data-filter="cat-cyber">🦠 נוזקות, פישינג ודליפות</button>
+      </div>
+
+      <!-- Live Count Stats -->
+      <div class="forbidden-stats-bar">
+        <span><i class="fa-solid fa-shield-halved" style="color: #ef4444; margin-left: 5px;"></i> רשימת איסורים רשמית</span>
+        <span id="forbidden-counter">מציג את כל הסעיפים</span>
+      </div>
+
+      <!-- Forbidden Categories Container -->
+      <div id="forbidden-categories-wrap">
+
+        <!-- Category 1: פרטי קשר, זהות ודוקסינג -->
+        <div class="forbidden-category-card" data-category="cat-contact">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-id-card"></i>
+              <span>פרטי קשר, זהות ומידע אישי (Doxxing)</span>
+            </div>
+            <span class="category-count">16 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">📱</span><span class="forbidden-item-text">מספרי טלפון פרטיים של אנשים ללא אישור.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🪪</span><span class="forbidden-item-text">מספרי תעודת זהות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📧</span><span class="forbidden-item-text">כתובות אימייל פרטיות ללא אישור או כתובות חלופיות פרטיות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📞</span><span class="forbidden-item-text">פרטי קשר של אדם אחר ללא אישור.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧑‍💻</span><span class="forbidden-item-text">פרטי חשבון Discord / Steam / Instagram וכדומה שנועדו להישאר פרטיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">👤</span><span class="forbidden-item-text">חשבונות פרטיים או פרופילים שאינם מיועדים לפרסום.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🕵️</span><span class="forbidden-item-text">מידע שנאסף על אדם במטרה לחשוף את זהותו או שמו האמיתי מאחורי כינוי אנונימי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎯</span><span class="forbidden-item-text">מידע שנועד לעקוב אחרי אדם או לאתר אותו בניגוד לרצונו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📋</span><span class="forbidden-item-text">רשימות ומאגרים עם מידע אישי על משתמשים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📢</span><span class="forbidden-item-text">"חשיפות" של אנשים פרטיים הכוללות פרטים מזהים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧑‍⚖️</span><span class="forbidden-item-text">Doxxing מכל סוג או מדריכים לחשיפת זהותו של אדם פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔍</span><span class="forbidden-item-text">חיפוש ופרסום פרטים אישיים של אדם ללא הסכמתו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧩</span><span class="forbidden-item-text">שילוב של כמה פרטים קטנים שיחד מאפשרים לזהות או לאתר אדם.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎭</span><span class="forbidden-item-text">התחזות לאדם אחר באמצעות פרטים אישיים שלו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧨</span><span class="forbidden-item-text">איומים, Swatting או פרטים שנועדו להטרדה מתואמת.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🤫</span><span class="forbidden-item-text">מידע שאדם ביקש במפורש שלא להפיץ, או שמועות שמציגות מידע אישי כעובדה.</span></div>
+          </div>
+        </div>
+
+        <!-- Category 2: אבטחה, סיסמאות, טוקנים וקודים -->
+        <div class="forbidden-category-card" data-category="cat-security">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-key"></i>
+              <span>אבטחה, סיסמאות, טוקנים וקודים (Security & Credentials)</span>
+            </div>
+            <span class="category-count">24 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔑</span><span class="forbidden-item-text">סיסמאות מכל סוג או קבצי Passwords/Credentials.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📧</span><span class="forbidden-item-text">פרטי התחברות לחשבונות או קישורי התחברות אישיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔐</span><span class="forbidden-item-text">קודי אימות, קודי 2FA, Backup Codes או קודי SMS.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🛡️</span><span class="forbidden-item-text">קודי שחזור (Recovery Keys / Backup Codes).</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💰</span><span class="forbidden-item-text">Private Keys של ארנקים או Seed Phrases של ארנקי קריפטו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🍪</span><span class="forbidden-item-text">Cookies שמאפשרים גישה לחשבון או Session Tokens.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎟️</span><span class="forbidden-item-text">Access Tokens ו-Refresh Tokens.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔑</span><span class="forbidden-item-text">API Keys פרטיים מכל סוג.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🤖</span><span class="forbidden-item-text">Bot Tokens (דיסקורד, טלגרם וכד').</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💻</span><span class="forbidden-item-text">SSH Keys פרטיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🌐</span><span class="forbidden-item-text">קבצי VPN אישיים או פרטי התחברות ל-VPN פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🖥️</span><span class="forbidden-item-text">Remote Access Codes (גישה מרחוק).</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔄</span><span class="forbidden-item-text">קישורי איפוס סיסמה (Reset Password) או קישורי אימות זהות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">❓</span><span class="forbidden-item-text">שאלות אבטחה ותשובותיהן, או מידע שנאסף כדי לנחש סיסמה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🌐</span><span class="forbidden-item-text">כתובת IP של אדם פרטי כאשר היא משמשת לזיהוי או איתור שלו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔌</span><span class="forbidden-item-text">כתובת MAC של מכשיר פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔢</span><span class="forbidden-item-text">מספר סידורי של מחשב, טלפון או מכשיר אישי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📶</span><span class="forbidden-item-text">מספר IMEI של טלפון, מספר IMSI או מזהים סלולריים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📶</span><span class="forbidden-item-text">צילום של פתק שעליו כתובה סיסמת ה-Wi-Fi של בית פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏷️</span><span class="forbidden-item-text">צילום מדבקה על נתב (Router) ביתי שבה מופיעים פרטי התחברות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📱</span><span class="forbidden-item-text">צילום התראה שמכילה קוד אימות חד-פעמי (OTP).</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🗂️</span><span class="forbidden-item-text">צילום מסך של מנהל סיסמאות (Password Manager).</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🌐</span><span class="forbidden-item-text">צילום חלון דפדפן שבו חשבון פרטי מחובר.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔓</span><span class="forbidden-item-text">פרטי גישה לחשבונות שנפרצו או קישורים לחשבונות פרוצים.</span></div>
+          </div>
+        </div>
+
+        <!-- Category 3: מידע פיננסי ובנקאי -->
+        <div class="forbidden-category-card" data-category="cat-finance">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-credit-card"></i>
+              <span>מידע פיננסי, בנקאי ואשראי</span>
+            </div>
+            <span class="category-count">13 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">💳</span><span class="forbidden-item-text">מספרי כרטיסי אשראי או פרטי תשלום.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏦</span><span class="forbidden-item-text">פרטי חשבון בנק או מסמכי בנק.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💰</span><span class="forbidden-item-text">פרטים פיננסיים פרטיים מכל סוג.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📅</span><span class="forbidden-item-text">תוקף כרטיסי אשראי וקודי CVV/CVC.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📸</span><span class="forbidden-item-text">תמונות של כרטיסי אשראי או חיוב.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧾</span><span class="forbidden-item-text">חשבוניות פרטיות הכוללות מידע רגיש או כתובת חיוב.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💵</span><span class="forbidden-item-text">תלושי שכר ופרטי משכורת של אדם אחר ללא אישור.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏛️</span><span class="forbidden-item-text">פרטי מס ומספרי תיקי מס ברשויות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📑</span><span class="forbidden-item-text">מסמכי ביטוח לאומי, קצבאות או רווחה פרטיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🛡️</span><span class="forbidden-item-text">פרטי ביטוח פרטיים ומספרי פוליסות ביטוח.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔔</span><span class="forbidden-item-text">צילום מסך של התראות בנק שמציגות שם ופרטי חשבון.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧾</span><span class="forbidden-item-text">צילום קבלה הכוללת 4 ספרות אחרונות ופרטים מזהים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎫</span><span class="forbidden-item-text">כרטיסי טיסה, רכבת, אוטובוס או אישורי הזמנה הכוללים פרטים אישיים.</span></div>
+          </div>
+        </div>
+
+        <!-- Category 4: מיקומים וכתובות -->
+        <div class="forbidden-category-card" data-category="cat-location">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>כתובות, מיקומים ותחבורה</span>
+            </div>
+            <span class="category-count">13 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏠</span><span class="forbidden-item-text">כתובות מגורים פרטיות של אנשים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📍</span><span class="forbidden-item-text">מיקום מדויק של אדם ללא הסכמתו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🗺️</span><span class="forbidden-item-text">מיקום בזמן אמת (Live Location) ללא הסכמה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🚗</span><span class="forbidden-item-text">מסלול נסיעה קבוע או היסטוריית נסיעות ומיקומים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧭</span><span class="forbidden-item-text">צילום מסך ניווט (Waze/Maps) שמציג כתובת בית פרטית.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🚗</span><span class="forbidden-item-text">מספר לוחית רישוי של רכב פרטי כאשר הוא משמש לחשיפה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🚘</span><span class="forbidden-item-text">רישיון רכב, מסמך רישום רכב פרטי או תג חניה פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🅿️</span><span class="forbidden-item-text">תמונה של חניה פרטית יחד עם מידע על מיקום הבית.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📦</span><span class="forbidden-item-text">צילום חבילה ביתית או תווית משלוח עם כתובת פרטית.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">✉️</span><span class="forbidden-item-text">צילום מעטפה, מכתב או תיבת דואר עם שם וכתובת.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏨</span><span class="forbidden-item-text">צילום הזמנת מלון או כרטיס חדר במלון של אדם אחר.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏢</span><span class="forbidden-item-text">פרסום תמונה שמאפשרת לזהות את הבית של אדם לפי הרקע.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🚶</span><span class="forbidden-item-text">מידע שנועד להגיע לביתו של אדם או להטרידו פיזית.</span></div>
+          </div>
+        </div>
+
+        <!-- Category 5: שיחות, הקלטות ומדיה -->
+        <div class="forbidden-category-card" data-category="cat-media">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-comments"></i>
+              <span>שיחות פרטיות, הקלטות ומדיה (DMs & Recordings)</span>
+            </div>
+            <span class="category-count">16 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">💬</span><span class="forbidden-item-text">צילומי מסך של שיחות פרטיות (DMs) ללא אישור שני הצדדים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎙️</span><span class="forbidden-item-text">הקלטות קוליות פרטיות או הודעות קוליות שהורדו מהמכשיר ללא הסכמה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎥</span><span class="forbidden-item-text">סרטונים פרטיים ללא הסכמה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📸</span><span class="forbidden-item-text">תמונות פרטיות של אנשים או תמונות פנים ללא הסכמתם.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🛑</span><span class="forbidden-item-text">הודעות פרטיות שהשולח ביקש במפורש שלא להפיץ.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📝</span><span class="forbidden-item-text">טיוטות פרטיות של הודעות או פתקים אישיים (Notes).</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🗑️</span><span class="forbidden-item-text">צילום הודעות שנמחקו מחשבון של אדם אחר.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">👥</span><span class="forbidden-item-text">צילום רשימת חברים פרטית או רשימת שרתים פרטית.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📱</span><span class="forbidden-item-text">צילום של קבוצת WhatsApp פרטית או רשימת חברי קבוצה ללא אישור.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔒</span><span class="forbidden-item-text">צילום מסך נעול של התראות פרטיות ממכשיר של אדם אחר.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔎</span><span class="forbidden-item-text">צילום היסטוריית חיפושים פרטית.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📒</span><span class="forbidden-item-text">צילום רשימת אנשי קשר פרטית או יומן אישי/לוח שנה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">☁️</span><span class="forbidden-item-text">קישורים לאלבומי תמונות פרטיים או Google Drive פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔗</span><span class="forbidden-item-text">הזמנות פרטיות לשרתים או קבוצות כאשר בעליהן ביקשו שלא להפיץ.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🖼️</span><span class="forbidden-item-text">צילום מסך שמכיל בטעות מידע אישי ברקע.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📂</span><span class="forbidden-item-text">פרסום קובץ שמכיל Metadata מוסתר או שכבות מידע אישי.</span></div>
+          </div>
+        </div>
+
+        <!-- Category 6: תכנים רגישים ואינטימיים -->
+        <div class="forbidden-category-card" data-category="cat-sensitive">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>תכנים אינטימיים, מיניים ורגישים</span>
+            </div>
+            <span class="category-count">6 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔞</span><span class="forbidden-item-text">תוכן מיני של קטינים — <strong>אפס סובלנות והרחקה מיידית!</strong></span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🖼️</span><span class="forbidden-item-text">תמונות אינטימיות או מיניות ללא הסכמה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🚫</span><span class="forbidden-item-text">תוכן מיני שהופץ ללא הסכמת המצולם.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">❤️</span><span class="forbidden-item-text">מידע על מערכות יחסים, חיים אישיים או נטייה מינית ללא הסכמה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧠</span><span class="forbidden-item-text">מידע אישי רגיש על אדם אחר שנועד לפגוע או לבייש.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🩸</span><span class="forbidden-item-text">תכני זוועה, דם, גועל, אלימות קשה (Gore) או חומרים מטרידים.</span></div>
+          </div>
+        </div>
+
+        <!-- Category 7: מידע רפואי -->
+        <div class="forbidden-category-card" data-category="cat-health">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-stethoscope"></i>
+              <span>מידע רפואי ובריאותי</span>
+            </div>
+            <span class="category-count">13 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">🩺</span><span class="forbidden-item-text">מידע רפואי פרטי של אדם אחר מכל סוג.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏥</span><span class="forbidden-item-text">מידע על טיפולים רפואיים, אשפוזים או שחרור מבית חולים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧪</span><span class="forbidden-item-text">תוצאות בדיקות רפואיות או מסמך אבחון של אדם אחר.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💊</span><span class="forbidden-item-text">מידע על תרופות שאדם אחר משתמש בהן או מרשמים רפואיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏷️</span><span class="forbidden-item-text">צילום מדבקה על תרופה שבה מופיעים פרטי המטופל.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧠</span><span class="forbidden-item-text">מידע על מצב נפשי/רגשי או טיפולים פסיכולוגיים של אדם אחר.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">♿</span><span class="forbidden-item-text">מידע על מוגבלות של אדם אחר ללא אישור.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💳</span><span class="forbidden-item-text">תמונות של כרטיסי קופת חולים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📄</span><span class="forbidden-item-text">תמונות של מסמכים רפואיים פרטיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎟️</span><span class="forbidden-item-text">צילום כרטיס תור רפואי או זימון רפואי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏷️</span><span class="forbidden-item-text">צילום צמיד בית חולים עם פרטים מזהים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💉</span><span class="forbidden-item-text">צילום פנקס חיסונים אישי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📋</span><span class="forbidden-item-text">כל מסמך בריאותי פרטי אחר.</span></div>
+          </div>
+        </div>
+
+        <!-- Category 8: קטינים, משפחה ולימודים -->
+        <div class="forbidden-category-card" data-category="cat-family">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>קטינים, מוסדות לימוד ומשפחה</span>
+            </div>
+            <span class="category-count">19 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏫</span><span class="forbidden-item-text">פרטי בית ספר או מוסד לימודים של קטין ללא אישור.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">👨‍👩‍👧</span><span class="forbidden-item-text">פרטים אישיים, שמות מלאים, טלפונים או כתובות של בני משפחה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">👶</span><span class="forbidden-item-text">תמונות של קטינים ללא אישור מתאים או מידע לזיהוי קטין.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏠</span><span class="forbidden-item-text">מיקום הבית או בית הספר של קטין.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📞</span><span class="forbidden-item-text">פרטי ההורים ומספרי הטלפון של הורים ללא אישור.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🪪</span><span class="forbidden-item-text">צילום תעודת תלמיד, כרטיס תלמיד או מספר אישי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📋</span><span class="forbidden-item-text">צילום רשימת תלמידים, רשימת נוכחות או רשימת טלפונים כיתתית.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📊</span><span class="forbidden-item-text">צילום גיליון ציונים, תעודה או מבחן הכולל פרטי תלמיד.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">⏰</span><span class="forbidden-item-text">מערכת שעות אישית או לוח זמנים של תלמיד.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📑</span><span class="forbidden-item-text">צילום מסמך הרשמה למוסד לימודים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">✉️</span><span class="forbidden-item-text">צילום אישור היעדרות, מכתב להורים או מסמך משמעתי של תלמיד.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏢</span><span class="forbidden-item-text">מידע על מקום העבודה או שעות עבודה של אדם שביקש לשמור עליהם פרטיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🪪</span><span class="forbidden-item-text">צילום כרטיס עובד, תג כניסה לעבודה או תג מבקר.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📜</span><span class="forbidden-item-text">צילום חוזה עבודה פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📌</span><span class="forbidden-item-text">צילום לוח מודעות פנימי עם שמות או פרטים אישיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">👑</span><span class="forbidden-item-text"><strong>תמונה של אמא שלכם / הורים ללא אישור 🚫</strong></span></div>
+          </div>
+        </div>
+
+        <!-- Category 9: מסמכים, תגים וחוזים -->
+        <div class="forbidden-category-card" data-category="cat-documents">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-file-shield"></i>
+              <span>מסמכים, חוזים, תגים וחתימות</span>
+            </div>
+            <span class="category-count">15 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">📄</span><span class="forbidden-item-text">מסמכים אישיים, תעודות מזהות או מסמכים ממשלתיים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🪪</span><span class="forbidden-item-text">תמונות של רישיונות נהיגה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">⚖️</span><span class="forbidden-item-text">פרטים משפטיים פרטיים, תביעות או מסמכים משפטיים שלא פורסמו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">✍️</span><span class="forbidden-item-text">צילום מסמך הכולל חתימה פרטית, דיגיטלית או סרוקה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📑</span><span class="forbidden-item-text">מסמכי הגירה, אזרחות או רישום ממשלתי פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏠</span><span class="forbidden-item-text">צילום מסמך בעלות על נכס (טאבו) או חוזה שכירות פרטי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📜</span><span class="forbidden-item-text">צילום חוזה בין שני אנשים ללא הסכמתם.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📁</span><span class="forbidden-item-text">מסמך עם מספר תיק אישי או מספר פנייה אישי לרשות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏷️</span><span class="forbidden-item-text">צילום כרטיס מועדון, כרטיס ספרייה או מספר לקוח אישי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎟️</span><span class="forbidden-item-text">ברקודים אישיים, QR אישיים או כרטיסי אירוע אישיים המאפשרים כניסה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔐</span><span class="forbidden-item-text">קודי כניסה לבניינים, קודי אינטרקום, מנעולים או קודי אזעקה.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔑</span><span class="forbidden-item-text">צילום מפתח פיזי, צרור מפתחות פרטי או מפתחות דיגיטליים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">📝</span><span class="forbidden-item-text">פרסום מסמך שבו נשארו הערות, Track Changes או פרטים מוסתרים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">⚖️</span><span class="forbidden-item-text">כל מידע אחר שאדם סביר היה מצפה שיישאר פרטי — גם אם הוא נראה "לא חשוב".</span></div>
+          </div>
+        </div>
+
+        <!-- Category 10: נוזקות, סייבר ודליפות -->
+        <div class="forbidden-category-card" data-category="cat-cyber">
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fa-solid fa-biohazard"></i>
+              <span>נוזקות, פישינג, מאגרים ודליפות (Cyber & Malware)</span>
+            </div>
+            <span class="category-count">13 סעיפים</span>
+          </div>
+          <div class="forbidden-items-grid">
+            <div class="forbidden-item"><span class="forbidden-item-icon">🦠</span><span class="forbidden-item-text">Malware, וירוסים, סוסים טרויאניים, תוכנות ריגול או קבצים זדוניים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🎣</span><span class="forbidden-item-text">Phishing links וקישורים שנועדו לגנוב פרטי התחברות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💻</span><span class="forbidden-item-text">קוד שנועד לפגוע במחשבים, שרתים או בחשבונות של אחרים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🗃️</span><span class="forbidden-item-text">מאגרי מידע (Databases) שהושגו באופן לא חוקי.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">💾</span><span class="forbidden-item-text">Dumps של מידע אישי, רשימות אימיילים או טלפונים שנגנבו.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🔥</span><span class="forbidden-item-text">פרטים שהודלפו מפריצה לאתרים, שרתים או מערכות.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🏴‍☠️</span><span class="forbidden-item-text">קבצים או חומרים שהושגו באמצעות גישה לא מורשית.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🧪</span><span class="forbidden-item-text">תוכנות או קבצים שנועדו לעקוף אבטחה, הגדרות פרטיות או לפגוע באחרים.</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">🕸️</span><span class="forbidden-item-text">קישורים מתחזים של Fake Nitro או הונאות (Scams).</span></div>
+            <div class="forbidden-item"><span class="forbidden-item-icon">⚡</span><span class="forbidden-item-text">תוכנות צ'יטים, קראקים מפוקפקים או סקריפטים לפריצה.</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="toast">
+      <i class="fa-solid fa-circle-check" style="color: var(--gold-primary);"></i>
+      <span id="toast-text">הקישור הועתק בהצלחה!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 <span class="footer-gold">החוקה של יאמין</span> • כל הזכויות שמורות לרפובליקה</p>
+      <p style="margin-top: 0.3rem; font-size: 0.78rem; opacity: 0.7;">נבנה באהבה עבור קהילת יאמין בדיסקורד וב-Kick</p>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
